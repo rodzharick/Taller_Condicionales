@@ -1,24 +1,24 @@
-#programa para calcular en que cuadrante esta en un punto, de un plano cartesiano
+#programa para calcular en que cuadrante esta un punto,de un plano cartesiano
 
 #entrada
-x= int(input("ingrese la coordenada x"))
-y= int(input("ingrese la coordenada y"))
+X = int(input("ingrese la coordenada x: "))
+Y = int(input("ingrese la coordenada y: "))
 
-#proceso
-if x==0:
-    if y==0:
-        print("el punto esta en el origen del plano cartesiano(0,0) ")
+#proceso y salida
+if X == 0:
+    if Y == 0:
+        print("la coordenada" ,(X , Y),"esta en el origen")
     else:
-        print("el punto esta en el eje y")
-elif y==0:
-    print("el punto esta en el eje ")
-elif x>0:
-    if y>0:
-        print("el punto esta en el cuadrante 1")
+        print("la coordenada" ,(X , Y),"esta en el eje Y")
+elif Y == 0:
+    print("la coordenada" ,(X , Y),"esta en el eje X")
+elif X > 0:
+    if Y > 0:
+        print("la coordenada" ,(X , Y),"esta en el cuadrante 1")
     else:
-        print("el punto esta en el cuadrante 4")
-elif y<0:
-    print("el punto esta en el cuadrante 3")
+        print("la coordenada" ,(X , Y),"esta en el cuadrante 4")
+elif Y < 0:
+    print("la coordenada" ,(X , Y),"esta en el cuadrante 3")
 else:
-    print("el punto esta en el cuadrante 2")
+    print("la coordenada" ,(X , Y),"esta en el cuadrante 2")
 
